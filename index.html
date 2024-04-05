@@ -37,10 +37,19 @@
     </script>
 </head>
 
-<body class="flex items-center justify-center h-full">
-    <h1 class="text-6xl font-bold tracking-wide">
-        Digikarsa
-    </h1>
+<body class="flex flex-col items-center justify-center h-full select-none text-center">
+    <div>
+        <h1 class="text-6xl font-bold tracking-wide inline-block">
+            Digikarsa
+        </h1>
+        <div class="text-right text-sm font-bold">
+            <span id="year">&#169; </span>
+        </div>
+    </div>
 </body>
+
+<script>
+    document.getElementById('year').innerHTML += new Date().getFullYear();
+</script>
 
 </html>
