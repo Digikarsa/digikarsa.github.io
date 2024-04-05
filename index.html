@@ -1,35 +1,27 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="h-full bg-primary">
+
 <head>
-    <title>Digikarsa</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f8f9fa;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#edc054',
+                    }
+                }
+            }
         }
-
-        .jumbotron {
-            background-color: #f8f9fa;
-            padding: 2rem;
-            border-radius: 0.3rem;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .jumbotron h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            text-align: center;
-            margin: 0;
-        }
-    </style>
+    </script>
 </head>
-<body>
-    <div class="jumbotron">
-        <h1>Digikarsa</h1>
-    </div>
+
+<body class="flex items-center justify-center h-full">
+    <h1 class="text-6xl font-bold tracking-wide">
+        Digikarsa
+    </h1>
 </body>
+
 </html>
